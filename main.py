@@ -1,16 +1,18 @@
-# This is a sample Python script.
+from tkinter import *
+from tkinter import ttk
+import Widgets.grid
+import Widgets.buttons
+import Widgets.entry
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# starts main window
+root = Tk()
 
+#Widgets.grid.setGrid(root)
+e = Widgets.entry.setEntry(root)
+Widgets.buttons.counterButton(root, e)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
+root.mainloop()
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#if __name__ == '__main__':
+    # print(111)
