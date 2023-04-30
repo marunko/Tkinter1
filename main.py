@@ -5,13 +5,20 @@ import Widgets.buttons
 import Widgets.entry
 
 # starts main window
-root = Tk()
+print("doing main")
+t = [1,23,4,5]
+for i in range(0,4):
+    t[i] = 100+i
+
+print(t)
+
+#root = Tk()
 
 #Widgets.grid.setGrid(root)
-e = Widgets.entry.setEntry(root)
-Widgets.buttons.counterButton(root, e)
+#e = Widgets.entry.setEntry(root)
+#Widgets.buttons.counterButton(root, e)
 
-root.mainloop()
+#root.mainloop()
 
 # Press the green button in the gutter to run the script.
 #if __name__ == '__main__':

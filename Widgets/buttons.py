@@ -4,7 +4,7 @@ theE = None
 def counterButton(root, e):
     global theE
     theE = e
-    Button(root, text="clickMe", pady=20, command=clickCounterButton).pack()
+    Button(root, text="clickMe", pady=20, command=lambda: clickCounterButton()).pack()
 
 
 def clickCounterButton():
